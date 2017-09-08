@@ -134,6 +134,11 @@ void ConcaveShape::setTexture(const sf::Texture& t)
   texture=&t;
 }
 //---------------------------------------------------------------------------//
+void draw(sf::RenderTarget& target, sf::RenderStates states) const
+{
+  states.texture=texture;
+  for (auto& i:triangles) {target.draw(i,states);}
+}
 }
 }
 //-----------------------------------//
