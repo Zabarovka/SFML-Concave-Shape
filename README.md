@@ -1,1 +1,3 @@
 # SFML-Concave-Shape
+SFML class for creating concave shapes.
+But how nicely remove "std::vector<sf::Vector2f> points;"? Hm...
