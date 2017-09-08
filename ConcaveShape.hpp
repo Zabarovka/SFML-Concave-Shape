@@ -28,11 +28,7 @@ class ConcaveShape: public sf::Drawable, public sf::Transformable {
     void Triangulate();
     void setColor(sf::Color c);
     void setTexture(const sf::Texture& t);
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const
-    {
-      states.texture=texture;
-      for (auto& i:triangles) {target.draw(i,states);}
-    }
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
 
 }
