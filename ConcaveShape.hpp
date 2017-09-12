@@ -23,7 +23,7 @@ class ConcaveShape: public sf::Drawable, public sf::Transformable {
   public:
     explicit ConcaveShape(sf::Color c=sf::Color::Black);
     explicit ConcaveShape(const sf::Texture& t,sf::Color c=sf::Color::Black);
-    ~ConcaveShape();
+    virtual ~ConcaveShape();
     void addPoint(sf::Vector2f point);
     void Triangulate();
     void setColor(sf::Color c);
