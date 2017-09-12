@@ -5,10 +5,10 @@
 //-----------------------------------//
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
-//-----------------------------------//
+//---------------------------------------------------------------------------//
 namespace zabarovka {
 namespace sfml {
-
+//-----------------------------------//
 class ConcaveShape: public sf::Drawable, public sf::Transformable {
   private:
     const sf::Texture* texture;
@@ -27,8 +27,8 @@ class ConcaveShape: public sf::Drawable, public sf::Transformable {
     void setTexture(const sf::Texture& t);
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 };
-
+//-----------------------------------//
 }
 }
 //---------------------------------------------------------------------------//
-#endif // CONCAVESHAPE_HPP
+#endif //CONCAVESHAPE_HPP------------//
